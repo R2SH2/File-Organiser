@@ -22,11 +22,11 @@ The following file types are recognized and sorted by the File Organiser:
 1. Clone or download this repository.
 2. Navigate to the project directory and run the script.
 3. Use the GUI to select the directory you want to organize.
-4. Click the organize button and watch as your files get sorted!
+4. Once you select the directory, watch as your files get sorted!
 
 ## Note
 
-- This tool automatically deletes '.zip', '.dmg', '.pkg', '.bin', '.ova', '.tar' files for cleanup purposes.
+- This tool automatically deletes `.zip`, `.dmg`, `.pkg`, `.bin`, `.ova` and `.tar` files for cleanup purposes.
 - As of now, the tool is designed to work only on MAC systems. Support for other platforms will be added in future releases.
 
 ## Contributions
