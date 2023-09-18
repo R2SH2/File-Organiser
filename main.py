@@ -66,13 +66,3 @@ if __name__ == "__main__":
     root = Tk()
     organizer = FileOrganizer(root)
     root.mainloop()
-
-
-
-
-# file_types = {
-#         'Music': ['.mp3', '.wav', '.flac'],
-#         'Videos': ['.mp4', '.mkv', '.flv', '.mpeg'],
-#         'Documents': ['.pdf', '.docx', '.txt', '.xlsx', '.csv', '.yaml', '.json', '.xml', '.html', '.md', '.pptx', '.doc'],
-#         'Images': ['.jpg', '.jpeg', '.png', '.gif', 'HEIC'],
-#     }
