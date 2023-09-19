@@ -46,7 +46,7 @@ class FileOrganizer:
             filepath = os.path.join(directory, filename)
             if os.path.isfile(filepath):
                 file_ext = os.path.splitext(filename)[1]
-                if file_ext in ['.zip', '.dmg']:
+                if file_ext in ['.zip', '.dmg', '.exe', '.pkg', '.deb', '.msi', '.iso', '.tar', '.gz', '.7z', '.rar']:
                     os.remove(filepath)
                     continue
                 for category, extensions in file_types.items():
