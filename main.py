@@ -21,7 +21,8 @@ class FileOrganizer:
    | |    |__||   |  `.             .'                          | |       /'""'.\  .'.''| | |  |   |  ||__|  .'   /    `.             .' | |               
    | |        '---'    `''-...... -'                            | |      ||     ||/ /   | |_|  |   |  |     /    /___    `''-...... -'   | |               
    | |                                                          |_|      \'. __// \ \._,\ '/|  |   |  |    |         |                   |_|               
-   |_|                                                                    `'---'   `--'  `" '--'   '--'    |_________|                                     """
+   |_|                                                                    `'---'   `--'  `" '--'   '--'    |_________|                                     
+    """
 
         label = Label(self.root, text=ascii_art_title, font=("Courier", 10))
         label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
@@ -45,7 +46,7 @@ class FileOrganizer:
             filepath = os.path.join(directory, filename)
             if os.path.isfile(filepath):
                 file_ext = os.path.splitext(filename)[1]
-                if file_ext in ['.zip', '.dmg', '.pkg', '.bin', '.ova', '.tar']:
+                if file_ext in ['.zip', '.dmg']:
                     os.remove(filepath)
                     continue
                 for category, extensions in file_types.items():
