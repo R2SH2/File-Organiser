@@ -6,7 +6,7 @@ class FileOrganizer:
     def __init__(self, root):
         self.root = root
         self.root.title("File Organizer")
-        self.root.geometry("920x250")
+        # self.root.geometry("920x250")
 
         ascii_art_title = """                                                     
                                                      .-'''-.                                                                                               
@@ -29,6 +29,15 @@ class FileOrganizer:
 
         btn = Button(self.root, text="Select Folder to Organize", command=self.select_directory)
         btn.grid(row=1, column=0, columnspan=2, padx=20, pady=20)
+
+        # Update idle tasks to ensure all widgets are drawn
+        self.root.update_idletasks()
+
+        # Set the window size based on the content
+        self.root.geometry('{}x{}'.format(self.root.winfo_width(), self.root.winfo_height()))
+
+        # Optional: Set a minimum window size if desired
+        self.root.minsize(500, 200)  # Example min size
 
     def organize_files(self, directory):
         file_types = {
