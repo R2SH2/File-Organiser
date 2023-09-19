@@ -32,8 +32,8 @@ class FileOrganizer:
 
     def organize_files(self, directory):
         file_types = {
-            'Music': ['.mp3', '.wav', '.flac'],
-            'Videos': ['.mp4', '.mkv', '.flv', '.mpeg', '.mov', '.avi', '.wmv', '.m4v'],
+            'Music': ['.mp3', '.wav', '.flac', '.m4a', '.aac', '.ogg', '.wma', '.aiff', '.alac', '.aif', '.aifc'],
+            'Videos': ['.mp4', '.mkv', '.flv', '.mpeg', '.mov', '.avi', '.wmv', '.m4v', '.3gp', '.3g2', '.mxf', '.mts'],
             'Documents': ['.pdf', '.docx', '.txt', '.xlsx', '.csv', '.yaml', '.json', '.xml', '.html', '.md', '.pptx',
                           '.doc', '.pem', '.pub', '.key', '.crt', '.csr', '.p12', '.pfx', '.p7b', '.p7r', '.p7c',
                           '.py', '.js', '.dotx', '.rtf', '.RTF', '.ipynb', '.yml', '.YML', '.yaml', '.YAML', '.json',
